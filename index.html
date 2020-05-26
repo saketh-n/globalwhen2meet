@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+    <body>
+        <h1 id="timezone">
+            Placeholder
+        </h1>
+    </body>
+    <script type="text/javascript">
+        window.onload = function() {
+            var offset = new Date().getTimezoneOffset() / -60;
+            var timezone = document.getElementById("timezone");
+            timezone.firstChild.nodeValue = offset + " hours offset from UTC";
+        };
+    </script>
+</html>
+
